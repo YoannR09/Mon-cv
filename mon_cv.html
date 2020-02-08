@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/9499ed6664.js" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+
+        #blocCenter
+
+        {
+
+            display: flex;
+
+            justify-content: center;
+
+            margin-top: 100px;
+
+        }
+        #bottom
+        {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .cadre
+
+        {
+
+            width: 100%;
+
+            background-color: whitesmoke;
+
+            border-radius: 4px;
+
+        }
+
+        #cadreBtn
+
+        {
+
+            display: flex;
+
+            justify-content: space-around;
+
+        }
+
+        .lab
+
+        {
+
+            font-size: 0.7em;
+
+            color: black;
+
+        }
+
+        .textTop
+
+        {
+
+            font-size: 1.3em;
+
+            margin: 10px;
+
+        }
+
+        .borderProgress
+
+        {
+            border-right: 1px solid lightgray;
+        }
+        em
+        {
+            font-family: "Agency FB", Calibri, "Californian FB", serif;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        p
+        {
+            font-size: 0.8em;
+        }
+        .pOther
+        {
+            width: 150px;
+            font-weight: bold;
+            margin: 15px;
+        }
+        .logo
+        {
+            width: 50px;
+            height: 50px;
+            margin: auto;
+        }
+        i
+        {
+            font-size: 0.7em
+        }
+        span
+        {
+            width: 100%;
+            font-size :0.9em;
+            margin-right: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="blocCenter" style="display: flex;justify-content: center;">
+    <div class="col-9">
+        <div class="col-12" style="display: flex;justify-content: space-around">
+            <div style="width: 800px">
+                    <div class="col-12 container border border-info shadow p-3 mb-5 bg-white rounded" style="display:flex;justify-content: space-between;">
+                        <div style="width:120px">
+                        <img class="d-block" src="./images/profil.jpg" style="width:100px;height: 100px;border: darkgray 1px solid" alt="profil"/>
+                        </div>
+                        <div style="width: 650px;display: flex;justify-content: space-between;">
+                        <div style="text-align: left;width: 300px"><h4> Yoann ROCHE </h4><h5> <em>Développeur Java/J2EE</em> </h5> <span><i class="fas fa-calendar-alt text-info"></i>  <em>25 ans</em></span></div>
+                        <section class="row" style="text-align: right;">
+                            <span><i class="fas fa-phone-square text-info"></i>  <em>06.05.09.74.96</em></span>
+                            <span><i class="fas fa-envelope text-info"></i>  <em>roche_yoann@outlook.fr</em></span>
+                            <span><i class="fas fa-car text-info"></i>  <em>Permis B</em></span>
+                            <span><i class="fas fa-map-marker-alt text-info"></i>  <em>Ollioules / 83190</em></span>
+                        </section>
+                    </div>
+                    </div>
+
+                    <div class="col-12 container border shadow p-3 mb-5 bg-white rounded cadre">
+                        <section class="row">
+                            <div class="col" style="text-align: left;padding: 5px;">
+                                    <em style="font-size: 1.2em;margin-left: 10px">À propos de moi</em>
+                            </div>
+                            <button class="btn btn-small btModal" id="btModalPropos"><i class="fas fa-eye text-info"></i></button>
+                        </section>
+                        <div class="divModal" id="divModalPropos" style="padding: 10px;border-top: 1px solid darkgray;text-align: center;">
+                           <div style="text-align: left;margin: auto;">
+                            <p><em>À la suite de mon bac pro « Maintenance des équipements industriels », j’ai choisi de me lancer dans la vie professionnelle en tant qu’homme d’entretien sur une des îles Paul RICARD.</em></p>
+                            <p><em>Après m’être forgé de l’expérience dans le domaine du travail, je me suis lancé dans un domaine qui me convient mieux.</em></p>
+                            <p><em>J’ai alors commencé ma formation OpenClassrooms « Développeur d’application Java ».</em></p>
+                        </div>
+                        </div>
+                    </div>
+                     <div class="col-12 container border shadow p-3 mb-5 bg-white rounded cadre">
+                        <section class="row">
+                            <div class="col" style="text-align: left;;padding: 5px">
+                                    <em style="font-size: 1.2em;margin-left: 10px">Outils & logiciels</em>
+                            </div>
+                            <button class="btn btn-small btModal" id="btModalOutil"><i class="fas fa-eye text-info"></i></button>
+                        </section>
+                        <div class="divModal" id="divModalOutil" style="padding: 10px;border-top: 1px solid darkgray;text-align: center;">
+                             <section class="row" style="display: flex;justify-content: space-around;">
+                            <p class="pOther"><img class="d-block logo" src="./images/intellij.png" alt="intellij"/> IntelliJ IDEA </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/eclipse.jpg" alt="eclipse"/> Eclipse </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/visio.png" alt="visio"/> Microsoft Visio </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/docker.png" alt="docker"/> Docker </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/git.png" alt="git"/> Git </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/travis.png" alt="travis"/> Travis CI </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/power.png" alt="power"/> SQL Power Architect </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/postman.png" alt="postman"/> Postman </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/staruml.png" alt="staruml"/> StarUML </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/postgresql.png" alt="postgresql"/> PostgreSQL </p>
+                        </section>
+                        </div>
+                    </div>
+
+                     <div class="col-12 container border shadow p-3 mb-5 bg-white rounded cadre">
+                        <section class="row">
+                            <div class="col" style="text-align: left;;padding: 5px">
+                                    <em style="font-size: 1.2em;margin-left: 10px">Langages informatiques</em>
+                            </div>
+                            <button class="btn btn-small btModal" id="btModalLang"><i class="fas fa-eye text-info"></i></button>
+                        </section>
+                        <div class="divModal" id="divModalLang" style="padding: 10px;border-top: 1px solid darkgray;text-align: center;">
+                             <section class="row" style="display: flex;justify-content: space-around;">
+                            <p class="pOther"><img class="d-block logo" src="./images/java.png" alt="java"/> Java/J2EE </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/javascript.png" alt="javascript"/> Javascript </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/ts.png" alt="ts"/> TypeScript </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/html.png" alt="html"/> HTML </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/css.png" alt="css"/> CSS </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/sql.png" alt="sql"/> SQL </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/xml.png" alt="xml"/> XML </p>
+                        </section>
+                        </div>
+                    </div>
+
+                     <div class="col-12 container border shadow p-3 mb-5 bg-white rounded cadre">
+                        <section class="row">
+                            <div class="col" style="text-align: left;;padding: 5px">
+                                    <em style="font-size: 1.2em;margin-left: 10px">Frameworks</em>
+                            </div>
+                            <button class="btn btn-small btModal" id="btModalFrame"><i class="fas fa-eye text-info"></i></button>
+                        </section>
+                        <div class="divModal" id="divModalFrame" style="padding: 10px;border-top: 1px solid darkgray;text-align: center;">
+                            <section class="row" style="display: flex;justify-content: space-around;">
+                            <p class="pOther"><img class="d-block logo" src="./images/spring.png" alt="spring"/> Spring </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/maven.png" alt="maven"/> Apache Maven </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/struts.png" alt="struts"/> Struts 2 </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/junit.png" alt="junit"/> JUnit/Mockito </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/angular.png" alt="angular"/> Angular 8 </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/jquery.png" alt="jquery"/> jQuery </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/bootstrap.png" alt="bootstrap"/> Bootstrap </p>
+                        </section>
+                        </div>
+                    </div>
+                      <div class="col-12 container border shadow p-3 mb-5 bg-white rounded cadre">
+                        <section class="row">
+                            <div class="col" style="text-align: left;;padding: 5px">
+                                    <em style="font-size: 1.2em;margin-left: 10px">Système d’exploitation</em>
+                            </div>
+                            <button class="btn btn-small btModal" id="btModalSys"><i class="fas fa-eye text-info"></i></button>
+                        </section>
+                        <div class="divModal" id="divModalSys" style="padding: 10px;border-top: 1px solid darkgray;text-align: center;">
+                             <section class="row" style="display: flex;justify-content: space-around;">
+                           <p class="pOther"><img class="d-block logo" src="./images/windows.png" alt="windows"/> Windows </p>
+                            <p class="pOther"><img class="d-block logo" src="./images/linux.png" alt="linux"/> Linux </p>
+                        </section>
+                        </div>
+                    </div>
+                     <div class="col-12 container border shadow p-3 mb-5 bg-white rounded cadre">
+                        <section class="row">
+                            <div class="col" style="text-align: left;padding: 5px">
+                                    <em style="font-size: 1.2em;margin-left: 10px">Mes compétences</em>
+                            </div>
+                            <button class="btn btn-small btModal" id="btModalFaire"><i class="fas fa-eye text-info"></i></button>
+                        </section>
+                        <div class="divModal" id="divModalFaire" style="padding: 10px;border-top: 1px solid darkgray;">
+                             <p><em>Sélectionner une solution technique adaptée</em></p>
+                             <p><em>Analyser les besoins d’un client</em></p>
+                             <p><em>Concevoir l’architecture technique d’une application à l’aide de diagrammes UML</em></p>
+                            <p>- Réaliser les diagrammes suivants : diagramme de contexte, diagramme de package, diagramme de cas d’utilisation initial, diagramme de gestion, fiches descriptives, diagramme d’activité, wireframe.</p>
+                             <p><em>Décrire un domaine fonctionnel avec UML</em></p>
+                            <p>- Réaliser le modèle de classe et le modèle physique de données.</p>
+                             <p><em>Gérer une base de données.</em></p>
+                             <p><em>Création d’une base de données PostgreSQL via un script SQL d’un model physique de base de données.</em></p>
+                            <p>- Gestion des données via des requêtes SQL.</p>
+                            <p>- Gestion de la base de données via PgAdmin 4.</p>
+                             <p><em>Respecter les bonnes pratiques de développement en vigueur</em></p>
+                             <p><em>Concevoir une application web</em></p>
+                            <p>- Gestion des dépendances de l’applications avec Maven.</p>
+                            <p>- Gestion des couches avec Spring.</p>
+                            <p>- Communication avec la partie Front via Struts 2.</p>
+                            <p>- Gestion de la partie Front avec Bootstrap, jQuery.</p>
+                            <p>- Communication avec la base de données avec Jpa ou JdbcTemplate et des RowMapper.</p>
+                             <p><em>Produire une documentation technique et fonctionnelle de l’application</em></p>
+                            <p>- Réalisation des dossiers suivants : conception fonctionnelle, conception technique, exploitation, livraison finale.</p>
+                             <p><em>Gérer l’évolutivité et l’adaptabilité d'un système</em></p>
+                            <p>- Gestion avec Git.</p>
+                             <p><em>Mettre en place une démarche qualité et sa méthodologie</em></p>
+                            <p>- Gestion des logs avec Log4j2.</p>
+                            <p>- Gestion des commentaires avec JavaDoc.</p>
+                             <p><em>Compléter une suite de tests unitaires et d’intégration</em></p>
+                            <p>- Test réalisés via : Junit/Mockito, utilisation des Fake, Stub et du pattern Builder. Postman pour tester les microservices. Lancement des tests via des profiles Maven.</p>
+                            <p>- Gestion de l’évolutivité des tests via Travis CI, Docker.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(function() {
+        $('.divModal').hide();
+    });
+            $(document).on('click', '.btModal', function () {
+                var id = $(this).attr("id");
+                $('.btModal').attr("disabled", false);
+                $(this).attr("disabled", true);
+                $('.divModal').slideUp(500);
+                if (id === "btModalPropos") {
+                     $('#divModalPropos').slideDown(1000);
+                }else if(id === "btModalFaire"){
+                    $('#divModalFaire').slideDown(1000);
+                }else if(id === "btModalLang"){
+                    $('#divModalLang').slideDown(1000);
+                }else if(id === "btModalOutil"){
+                    $('#divModalOutil').slideDown(1000);
+                }else if(id === "btModalFrame"){
+                    $('#divModalFrame').slideDown(1000);
+                }else if(id === "btModalSys"){
+                    $('#divModalSys').slideDown(1000);
+                }
+    });
+</script>
+</html>
