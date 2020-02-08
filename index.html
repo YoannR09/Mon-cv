@@ -8,17 +8,11 @@
 <script src="https://kit.fontawesome.com/9499ed6664.js" crossorigin="anonymous"></script>
 
     <style type="text/css">
-
         #blocCenter
-
         {
-
             display: flex;
-
             justify-content: center;
-
             margin-top: 100px;
-
         }
         #bottom
         {
@@ -26,47 +20,26 @@
             justify-content: space-around;
             width: 100%;
         }
-
         .cadre
-
         {
-
             width: 100%;
-
             background-color: whitesmoke;
-
             border-radius: 4px;
-
         }
-
         #cadreBtn
-
         {
-
             display: flex;
-
             justify-content: space-around;
-
         }
-
         .lab
-
         {
-
             font-size: 0.7em;
-
             color: black;
-
         }
-
         .textTop
-
         {
-
             font-size: 1.3em;
-
             margin: 10px;
-
         }
 
         .borderProgress
@@ -80,7 +53,6 @@
             font-size: 1em;
             font-weight: bold;
         }
-
         p
         {
             font-size: 0.8em;
@@ -107,8 +79,15 @@
             font-size :0.9em;
             margin-right: 20px;
         }
-
-
+        .emTitre
+        {
+            font-size: 1em;
+            font-family: Verdana,Geneva,sans-serif;
+        }
+        .pContenu
+        {
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -130,7 +109,6 @@
                         </section>
                     </div>
                     </div>
-
                     <div class="col-12 container border shadow p-3 mb-5 bg-white rounded cadre">
                         <section class="row">
                             <div class="col" style="text-align: left;padding: 5px;">
@@ -188,7 +166,6 @@
                         </section>
                         </div>
                     </div>
-
                      <div class="col-12 container border shadow p-3 mb-5 bg-white rounded cadre">
                         <section class="row">
                             <div class="col" style="text-align: left;;padding: 5px">
@@ -230,33 +207,33 @@
                             <button class="btn btn-small btModal" id="btModalFaire"><i class="fas fa-eye text-info"></i></button>
                         </section>
                         <div class="divModal" id="divModalFaire" style="padding: 10px;border-top: 1px solid darkgray;">
-                             <p><em>Sélectionner une solution technique adaptée</em></p>
-                             <p><em>Analyser les besoins d’un client</em></p>
-                             <p><em>Concevoir l’architecture technique d’une application à l’aide de diagrammes UML</em></p>
-                            <p>- Réaliser les diagrammes suivants : diagramme de contexte, diagramme de package, diagramme de cas d’utilisation initial, diagramme de gestion, fiches descriptives, diagramme d’activité, wireframe.</p>
-                             <p><em>Décrire un domaine fonctionnel avec UML</em></p>
-                            <p>- Réaliser le modèle de classe et le modèle physique de données.</p>
-                             <p><em>Gérer une base de données.</em></p>
-                             <p><em>Création d’une base de données PostgreSQL via un script SQL d’un model physique de base de données.</em></p>
-                            <p>- Gestion des données via des requêtes SQL.</p>
-                            <p>- Gestion de la base de données via PgAdmin 4.</p>
-                             <p><em>Respecter les bonnes pratiques de développement en vigueur</em></p>
-                             <p><em>Concevoir une application web</em></p>
-                            <p>- Gestion des dépendances de l’applications avec Maven.</p>
-                            <p>- Gestion des couches avec Spring.</p>
-                            <p>- Communication avec la partie Front via Struts 2.</p>
-                            <p>- Gestion de la partie Front avec Bootstrap, jQuery.</p>
-                            <p>- Communication avec la base de données avec Jpa ou JdbcTemplate et des RowMapper.</p>
-                             <p><em>Produire une documentation technique et fonctionnelle de l’application</em></p>
-                            <p>- Réalisation des dossiers suivants : conception fonctionnelle, conception technique, exploitation, livraison finale.</p>
-                             <p><em>Gérer l’évolutivité et l’adaptabilité d'un système</em></p>
-                            <p>- Gestion avec Git.</p>
-                             <p><em>Mettre en place une démarche qualité et sa méthodologie</em></p>
-                            <p>- Gestion des logs avec Log4j2.</p>
-                            <p>- Gestion des commentaires avec JavaDoc.</p>
-                             <p><em>Compléter une suite de tests unitaires et d’intégration</em></p>
-                            <p>- Test réalisés via : Junit/Mockito, utilisation des Fake, Stub et du pattern Builder. Postman pour tester les microservices. Lancement des tests via des profiles Maven.</p>
-                            <p>- Gestion de l’évolutivité des tests via Travis CI, Docker.</p>
+                             <p><em class="emTitre">- Sélectionner une solution technique adaptée</em></p>
+                             <p><em class="emTitre">- Analyser les besoins d’un client</em></p>
+                             <p><em class="emTitre">- Concevoir l’architecture technique d’une application à l’aide de diagrammes UML</em></p>
+                            <p class="pContenu"> Réaliser les diagrammes suivants : diagramme de contexte, diagramme de package, diagramme de cas d’utilisation initial, diagramme de gestion, fiches descriptives, diagramme d’activité, wireframe.</p>
+                             <p><em class="emTitre">- Décrire un domaine fonctionnel avec UML</em></p>
+                            <p class="pContenu"> Réaliser le modèle de classe et le modèle physique de données.</p>
+                             <p><em class="emTitre">- Gérer une base de données.</em></p>
+                             <p><em class="emTitre">- Création d’une base de données PostgreSQL via un script SQL d’un model physique de base de données.</em></p>
+                            <p class="pContenu"> Gestion des données via des requêtes SQL.</p>
+                            <p class="pContenu"> Gestion de la base de données via PgAdmin 4.</p>
+                             <p><em class="emTitre">- Respecter les bonnes pratiques de développement en vigueur</em></p>
+                             <p><em class="emTitre">- Concevoir une application web</em></p>
+                            <p class="pContenu"> Gestion des dépendances de l’applications avec Maven.</p>
+                            <p class="pContenu"> Gestion des couches avec Spring.</p>
+                            <p class="pContenu"> Communication avec la partie Front via Struts 2.</p>
+                            <p class="pContenu"> Gestion de la partie Front avec Bootstrap, jQuery.</p>
+                            <p class="pContenu"> Communication avec la base de données avec Jpa ou JdbcTemplate et des RowMapper.</p>
+                             <p><em class="emTitre">- Produire une documentation technique et fonctionnelle de l’application</em></p>
+                            <p class="pContenu"> Réalisation des dossiers suivants : conception fonctionnelle, conception technique, exploitation, livraison finale.</p>
+                             <p><em class="emTitre">- Gérer l’évolutivité et l’adaptabilité d'un système</em></p>
+                            <p class="pContenu"> Gestion avec Git.</p>
+                             <p><em class="emTitre">- Mettre en place une démarche qualité et sa méthodologie</em></p>
+                            <p class="pContenu"> Gestion des logs avec Log4j2.</p>
+                            <p class="pContenu"> Gestion des commentaires avec JavaDoc.</p>
+                             <p><em class="emTitre">- Compléter une suite de tests unitaires et d’intégration</em></p>
+                            <p class="pContenu"> Test réalisés via : Junit/Mockito, utilisation des Fake, Stub et du pattern Builder. Postman pour tester les microservices. Lancement des tests via des profiles Maven.</p>
+                            <p class="pContenu"> Gestion de l’évolutivité des tests via Travis CI, Docker.</p>
                         </div>
                     </div>
             </div>
