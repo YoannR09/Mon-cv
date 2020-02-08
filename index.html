@@ -269,11 +269,10 @@
     $(function() {
         $('.divModal').hide();
     });
-
             $(document).on('click', '.btModal', function () {
                 var id = $(this).attr("id");
-                $(this).attr("disabled", true);
                 $('.btModal').attr("disabled", false);
+                $(this).attr("disabled", true);
                 $('.divModal').slideUp(500);
                 if (id === "btModalPropos") {
                      $('#divModalPropos').slideDown(1000);
